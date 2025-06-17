@@ -18,7 +18,7 @@ T_INITIAL = 10.0  # 初始温度 (°C)
 DEPTH_MAX = 20.0  # 最大深度 (m)
 
 
-def solve_earth_crust_diffusion(h=1.0, a=1.0, M=21, N=366, years=10):
+def solve_earth_crust_diffusion_student(h=1.0, a=1.0, M=21, N=366, years=10):
     """
     求解地壳热扩散方程 (显式差分格式)
     
@@ -83,7 +83,7 @@ def plot_seasonal_profiles(depth, temperature, seasons=[90, 180, 270, 365]):
 
 if __name__ == "__main__":
     # 运行模拟
-    depth, T = solve_earth_crust_diffusion()
+    depth, T = solve_earth_crust_diffusion_student()
     
     # 绘制季节性温度轮廓
     plot_seasonal_profiles(depth, T)
