@@ -6,7 +6,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def solve_earth_crust_diffusion():
+def earth_crust_diffusion_student.py():
     """
     实现显式差分法求解地壳热扩散问题
     
@@ -34,7 +34,7 @@ def solve_earth_crust_diffusion():
 if __name__ == "__main__":
     # 测试代码
     try:
-        depth, T = solve_earth_crust_diffusion()
+        depth, T = earth_crust_diffusion_student.py()
         print(f"计算完成，温度场形状: {T.shape}")
     except NotImplementedError as e:
         print(e)
